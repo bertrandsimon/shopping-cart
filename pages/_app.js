@@ -12,7 +12,7 @@ export default function App({ Component, pageProps }) {
     stripe={process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY}
     successUrl={`${process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY}/success`}
     cancelUrl={`${process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY}/?success=false`}
-    currency="GBP"
+    currency="EUR"
     allowedCountries={['US', 'GB', 'CA', 'FR']}
     // enables local storage
     shouldPersist={true}
