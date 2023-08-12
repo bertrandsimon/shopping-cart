@@ -29,7 +29,10 @@ export default function Product({ product }) {
       <div className="text-8xl cursor-default">{emoji}</div>
       <div className="text-lg">{name}</div>
       <div className="text-2xl font-semibold mt-auto">
-        {formatCurrencyString({ value:price, currency: "EUR"})}
+
+        {price} <span> €</span>
+
+        {/* {formatCurrencyString({ value:price, currency: "EUR"})} */}
       </div>
       <div className="flex justify-around items-center mt-4 mb-2 ">
         <button
